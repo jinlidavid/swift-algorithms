@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CC82CB8C2743BD1B0063976C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC82CB8B2743BD1B0063976C /* main.swift */; };
+		CC82CBA82743C4F20063976C /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC82CBA72743C4F20063976C /* Sorting.swift */; };
+		CC82CBBD2743C7FF0063976C /* StandardAlgorithmsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC82CBBC2743C7FF0063976C /* StandardAlgorithmsTest.swift */; };
+		CC82CBD52743C9890063976C /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC82CBA72743C4F20063976C /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,29 @@
 /* Begin PBXFileReference section */
 		CC82CB882743BD1B0063976C /* StandardAlgorithmsNew */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithmsNew; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC82CB8B2743BD1B0063976C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CC82CB972743C3420063976C /* StandardAlgorithmsTests\.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StandardAlgorithmsTests\\.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC82CBA72743C4F20063976C /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		CC82CBBA2743C7FF0063976C /* StandardAlgorithmsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC82CBBC2743C7FF0063976C /* StandardAlgorithmsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardAlgorithmsTest.swift; sourceTree = "<group>"; };
+		CC82CBBE2743C7FF0063976C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC82CB852743BD1B0063976C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC82CB942743C3420063976C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC82CBB72743C7FF0063976C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				CC82CB8A2743BD1B0063976C /* StandardAlgorithmsNew */,
+				CC82CBBB2743C7FF0063976C /* StandardAlgorithmsTest */,
 				CC82CB892743BD1B0063976C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				CC82CB882743BD1B0063976C /* StandardAlgorithmsNew */,
+				CC82CB972743C3420063976C /* StandardAlgorithmsTests\.xctest */,
+				CC82CBBA2743C7FF0063976C /* StandardAlgorithmsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +83,18 @@
 			isa = PBXGroup;
 			children = (
 				CC82CB8B2743BD1B0063976C /* main.swift */,
+				CC82CBA72743C4F20063976C /* Sorting.swift */,
 			);
 			path = StandardAlgorithmsNew;
+			sourceTree = "<group>";
+		};
+		CC82CBBB2743C7FF0063976C /* StandardAlgorithmsTest */ = {
+			isa = PBXGroup;
+			children = (
+				CC82CBBC2743C7FF0063976C /* StandardAlgorithmsTest.swift */,
+				CC82CBBE2743C7FF0063976C /* Info.plist */,
+			);
+			path = StandardAlgorithmsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +117,40 @@
 			productReference = CC82CB882743BD1B0063976C /* StandardAlgorithmsNew */;
 			productType = "com.apple.product-type.tool";
 		};
+		CC82CB962743C3420063976C /* StandardAlgorithmsTests\ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC82CB9C2743C3420063976C /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTests\" */;
+			buildPhases = (
+				CC82CB932743C3420063976C /* Sources */,
+				CC82CB942743C3420063976C /* Frameworks */,
+				CC82CB952743C3420063976C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StandardAlgorithmsTests\\";
+			productName = "StandardAlgorithmsTests\\";
+			productReference = CC82CB972743C3420063976C /* StandardAlgorithmsTests\.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC82CBB92743C7FF0063976C /* StandardAlgorithmsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC82CBBF2743C7FF0063976C /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTest" */;
+			buildPhases = (
+				CC82CBB62743C7FF0063976C /* Sources */,
+				CC82CBB72743C7FF0063976C /* Frameworks */,
+				CC82CBB82743C7FF0063976C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StandardAlgorithmsTest;
+			productName = StandardAlgorithmsTest;
+			productReference = CC82CBBA2743C7FF0063976C /* StandardAlgorithmsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +161,12 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					CC82CB872743BD1B0063976C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CC82CB962743C3420063976C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CC82CBB92743C7FF0063976C = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -110,16 +185,52 @@
 			projectRoot = "";
 			targets = (
 				CC82CB872743BD1B0063976C /* StandardAlgorithmsNew */,
+				CC82CB962743C3420063976C /* StandardAlgorithmsTests\ */,
+				CC82CBB92743C7FF0063976C /* StandardAlgorithmsTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC82CB952743C3420063976C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC82CBB82743C7FF0063976C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC82CB842743BD1B0063976C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC82CBA82743C4F20063976C /* Sorting.swift in Sources */,
 				CC82CB8C2743BD1B0063976C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC82CB932743C3420063976C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC82CBB62743C7FF0063976C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC82CBD52743C9890063976C /* Sorting.swift in Sources */,
+				CC82CBBD2743C7FF0063976C /* StandardAlgorithmsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +370,74 @@
 			};
 			name = Release;
 		};
+		CC82CB9D2743C3420063976C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "StandardAlgorithmsTests\\/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinlidavid.StandardAlgorithmsTests-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC82CB9E2743C3420063976C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "StandardAlgorithmsTests\\/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinlidavid.StandardAlgorithmsTests-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CC82CBC02743C7FF0063976C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinlidavid.StandardAlgorithmsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC82CBC12743C7FF0063976C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinlidavid.StandardAlgorithmsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +455,24 @@
 			buildConfigurations = (
 				CC82CB902743BD1B0063976C /* Debug */,
 				CC82CB912743BD1B0063976C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC82CB9C2743C3420063976C /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTests\" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC82CB9D2743C3420063976C /* Debug */,
+				CC82CB9E2743C3420063976C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC82CBBF2743C7FF0063976C /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC82CBC02743C7FF0063976C /* Debug */,
+				CC82CBC12743C7FF0063976C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
