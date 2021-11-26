@@ -12,10 +12,10 @@ class SortingTest: XCTestCase {
                      (input: [30,15,5,2,39], expected: [2,5,15,30,39]),
                      (input: [10,9,8,7,6,5,4,3,2], expected: [2,3,4,5,6,7,8,9,10]), //Array sorted in descending order
                      (input: [], expected: [])] // Empty array
+    let sorting = Sorting()
     
     func testBubbleSortWithAllVariationsReturnsSortedArray() {
         //arrange
-        let sorting = Sorting()
         //act
         //assert
         for testCase in testCases {
@@ -26,7 +26,6 @@ class SortingTest: XCTestCase {
     
     func testInsertionSortWithAllVariationsReturnsSortedArray() {
         //arrange
-        let sorting = Sorting()
         //act
         //assert
         for testCase in testCases {
@@ -37,7 +36,6 @@ class SortingTest: XCTestCase {
     
     func testQuickSortWithAllVariationsReturnsSortedArray() {
         //arrange
-        let sorting = Sorting()
         //act
         //assert
         for testCase in testCases {
@@ -46,11 +44,29 @@ class SortingTest: XCTestCase {
         }
     }
     
+    let performanceCases = [[1,4,2,3,5], [1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5],[1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5,1,4,2,3,5]]
+    
     func testBubbleSortPerformance() {
-        let sorting = Sorting()
-        let testArray = [1,7,6,5,4,3,1]
         measure {
-            _ = sorting.bubbleSort(testArray)
+            _ = sorting.bubbleSort(performanceCases[0])
+            _ = sorting.bubbleSort(performanceCases[1])
+            _ = sorting.bubbleSort(performanceCases[2])
+        }
+    }
+    
+    func testQuickSortPerformance() {
+        measure {
+            _ = sorting.quickSort(data:performanceCases[0])
+            _ = sorting.quickSort(data:performanceCases[1])
+            _ = sorting.quickSort(data:performanceCases[2])
+        }
+    }
+    
+    func testInsertionSortPerformance() {
+        measure {
+            _ = sorting.insertionSort(performanceCases[0])
+            _ = sorting.insertionSort(performanceCases[1])
+            _ = sorting.insertionSort(performanceCases[2])
         }
     }
 }
