@@ -105,7 +105,15 @@ func displayInsertionSort() {
 }
 
 func displayMergeSort() {
-    print("")
+    let testArray = [43,1,642,75,214,84,1,4,5,37,5,12,3]
+    print("-----------------------------")
+    print("Merge sort: Merge sort uses a divide and conquer approach. This means that it divides the unsorted array into two halves repeatedly until all elements are separated individually. At this point each pair of elements are compared, and merged. During the merging the elements are ordered. This is again repeated until the full sorted array is formed.")
+    print("-----------------------------")
+    print("Big O Complexity: \nAll cases - O(n log n)\nSpace Complexity: O(n)")
+    print("-----------------------------")
+    print("Unsorted Array: \(testArray)\nSorted Array: \(sorting.insertionSort(_: testArray))")
+    print("-----------------------------")
+
 }
 
 
